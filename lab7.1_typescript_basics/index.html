@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>CurrencyConverter</title>
+    <meta charset="utf-8" />
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/converter.js"></script>
+</head>
+<body>
+    <div ng-app="currencyApp">
+        <h2>Currency Converter</h2>
+
+        <div ng-controller="CurrencyController">
+            <section>
+                <input type="number" placeholder="sek" ng-model="sek" />
+                <button id="btn-sek-to-euro" ng-click="sekToEuro()">to euro</button>
+                <span id="euro-result">
+                    <!-- euro to sek result -->
+                </span>
+            </section>
+            <section>
+                <input type="number" placeholder="euro" ng-model="euro"/>
+                <button id="btn-euro-to-sek" ng-click="euroToSek()">to sek</button>
+                <span id="sek-result">
+                    <!-- sek to euro result -->
+                </span>
+            </section>
+        </div>
+    </div>
+
+
+</body>
+</html>
